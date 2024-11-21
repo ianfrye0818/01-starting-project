@@ -1,0 +1,13 @@
+<article [class.completed]="task.complete">
+  <h2>{{ task.title }}</h2>
+  <time>{{ task.dueDate }}</time>
+  <p>{{ task.summary }}</p>
+  <p class="actions">
+    @if(task.complete) {
+    <button (click)="setTaskIncomplete()">Uncomplete</button>
+    }@else {
+
+    <button (click)="setTaskComplete()">Complete</button>
+    }
+  </p>
+</article>

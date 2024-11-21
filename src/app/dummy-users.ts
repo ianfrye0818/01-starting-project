@@ -30,9 +30,3 @@ export const DUMMY_USERS = [
     avatar: 'user-6.jpg',
   },
 ];
-
-export type User = {
-  id: string;
-  name: string;
-  avatar: string;
-};

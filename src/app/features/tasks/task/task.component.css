@@ -17,6 +17,10 @@ time {
   margin: 0;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 .actions button {
   font: inherit;
   font-size: 0.9rem;

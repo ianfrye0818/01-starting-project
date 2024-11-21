@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { UserComponent } from './user/user.component';
-import { DUMMY_USERS, User } from './dummy-users';
-import { CommonModule } from '@angular/common';
-import { TasksComponent } from './tasks/tasks.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { UserComponent } from './features/user/user.component';
+import { DUMMY_USERS } from './dummy-users';
+import { TasksComponent } from './features/tasks/tasks.component';
+import { User } from './features/user/user.model';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, UserComponent, CommonModule, TasksComponent],
+  imports: [HeaderComponent, UserComponent, TasksComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
